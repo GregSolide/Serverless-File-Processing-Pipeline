@@ -1,5 +1,5 @@
 import boto3
-import ProgressPercentage
+import Backend.ProgressPercentage as ProgressPercentage
 import os
 
 
