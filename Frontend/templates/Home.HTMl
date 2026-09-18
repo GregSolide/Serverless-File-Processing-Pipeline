@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>
-            File PRocesser 
+            File Processer 
         </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,10 +19,22 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <!-- <div class="px-5 my-5 py-5 text-center">
         <h1>Hello World </h1>
         <input type="file"  name="file">
         <button type="submit" >Uploads </button>
-        
+        </div> -->
+        <div class="py-5 my-5 text-center"> 
+            <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> 
+            <h1 class="display-5 fw-bold text-body-emphasis">File Processer</h1> <div class="col-lg-6 mx-auto">
+                 <form method="post" action="{{ url_for('get_filed')}}",  enctype="multipart/form-data">
+                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
+                    <input type="file" accept=".csv" class="form-control" name="file">
+                    <button type="submit" class="btn btn-primary btn-lg px-4 gap-3"">Uploads</button>
+                </div>
+                 </form>
+                 </div>
+                 </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
